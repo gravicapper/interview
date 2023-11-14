@@ -24,13 +24,13 @@ public class InterviewController {
     @Autowired
     private CacheManager cacheManager;
 
-    @PostMapping("/add/{id}")
+    @PostMapping("/add")
     public void addUserInSessionCache(@RequestBody User user) {
         repositoryUser.getByLoginPassword(user);
     }
 
 
-    @PostMapping("/add/{id}")
+    @PostMapping("/isPresent")
     @SuppressWarnings("unchecked")
     public boolean isPresent(@RequestParam Integer password) {
 
