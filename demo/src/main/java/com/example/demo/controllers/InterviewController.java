@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 import java.util.Map;
 import java.util.Objects;
 
-@Controller
+@Controller("/user")
 public class InterviewController {
 
     @Autowired
